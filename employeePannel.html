@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Panel</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #6e7c7c, #4c6b8c);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #4CAF50;
+      font-size: 32px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    .task {
+      background-color: #f9f9f9;
+      margin: 10px 0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .task:hover {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+    .task h3 {
+      color: #333;
+      margin: 0;
+      font-size: 24px;
+    }
+    .task p {
+      color: #555;
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .task .due-date {
+      font-weight: bold;
+      color: #ff6347;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Employee Panel</h2>
+    <div id="tasksList"></div>
+  </div>
+
+  <script>
+    // Get the employee's name from localStorage (for login purposes)
+    const employeeName = prompt("Please enter your name:");
+
+    // Fetch tasks assigned to the logged-in employee
+    const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    const assignedTasks = tasks.filter(task => task.employeeName === employeeName);
+
+    const tasksList = document.getElementById('tasksList');
+
+    if (assignedTasks.length > 0) {
+      assignedTasks.forEach(task => {
+        const taskDiv = document.createElement('div');
+        taskDiv.className = 'task';
+        taskDiv.innerHTML = `
+          <h3>${task.taskTitle}</h3>
+          <p><strong>Description:</strong> ${task.taskDesc}</p>
+          <p><strong>Due Date:</strong> <span class="due-date">${task.dueDate}</span></p>
+          <p><strong>Status:</strong> ${task.status}</p>
+        `;
+        tasksList.appendChild(taskDiv);
+      });
+    } else {
+      tasksList.innerHTML = '<p style="color: #666;">No tasks assigned yet.</p>';
+    }
+  </script>
+</body>
+</html>
