@@ -1,4 +1,4 @@
-# Employee Task Management System
+# Manages-task-of-employee.github.io
 
 This is a web-based project designed to help administrators manage employees and assign tasks efficiently. The system provides two main panels: one for the *Admin (Administrator)* and one for the *Employee. It is built using **HTML, **CSS, and **JavaScript, and it stores data using the browser's **LocalStorage*.
 
@@ -79,10 +79,13 @@ The main objective of this project is to create a task management system that al
 
 1. *Download or Clone* the repository:
    ```bash
-   git clone https://github.com/shr-eeya/employee-manage-task.git
+   https://github.com/shr-eeya/manages-task-of-employee.github.io.git
 
- PROJECT BY 
-Shreeya Patel
-B.Tech - Computer Science Engineering  Lakshmi Narain College Of Technology Excellence
-GitHub : shr-eeya
+1.Open the folder and launch index.html in your browser
+2. Register  an admin ,login,and begin using the dashboard
 
+Developed By 
+Shreeya Patel 
+B.Tech - Computer Science Engineering 
+Lakshmi Narain College Of Technology Excellence
+GitHub: shr-eeya
