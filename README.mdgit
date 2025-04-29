@@ -1,2 +1,2 @@
-"# employee-task-manager.github.io"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/shr-eeya/task-employee-manager.github.io.gitgit push -u origin main
-"# employee-task-manager.github.io"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/shr-eeya/task-employee-manager.github.io.gitgit push -u origin main
+"# manages-task-of-employee.github.io"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/shr-eeya/manages-task-of-employee.github.io.git.gitgit push -u origin main
+"# manages-task-of-employee.github.io"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/shr-eeya/manages-task-of-employee.github.io.git.github.io.gitgit push -u origin main
