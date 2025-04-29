@@ -1,83 +1,88 @@
-"# manages-task-of-employee.github.io" 
 # Employee Task Management System
 
-This is a web-based task management system developed for managing employees and assigning tasks efficiently. It is designed for administrators to register, add employees, assign tasks, and monitor progress. The application is built using *HTML, **CSS, and **JavaScript* and uses *LocalStorage* to store all data.
+This is a web-based project designed to help administrators manage employees and assign tasks efficiently. The system provides two main panels: one for the *Admin (Administrator)* and one for the *Employee. It is built using **HTML, **CSS, and **JavaScript, and it stores data using the browser's **LocalStorage*.
 
 ---
 
 ## Project Objective
 
-The main objective of this project is to create a simple, responsive platform where:
+The main objective of this project is to create a task management system that allows:
 
-- *Admin* can register and log in
-- *Admin* can add employees
-- *Admin* can assign tasks with deadlines
-- Task status can be viewed as *Pending* or *Completed*
-- Progress can be tracked using a visual progress bar
+- Admin to log in securely
+- Admin to add employees with their details
+- Admin to assign tasks and track progress
+- Tasks to be viewed by employees in their panel
+
+---
+
+## How It Works
+
+- The *Admin Panel* is only accessible by the *administrator*. From here, the admin can:
+  - Register/Login
+  - Add employees
+  - Assign tasks
+  - View the number of pending and completed tasks
+  - Monitor employee task progress using a progress bar
+  - See tasks in a calendar view
+
+- The *Employee Panel* is designed for employees. It is used to:
+  - View tasks assigned by the admin
+  - (In future versions) update task progress/status
+
+> *Important Note:*  
+> This project uses *LocalStorage, so both the admin and employee panels must run in the **same browser/device* for the data to be shared correctly. In future versions, backend integration will allow real-time, multi-device support.
 
 ---
 
 ## Features
 
 - Admin registration and login
-- Admin dashboard with:
-  - Total number of employees
-  - Pending tasks
-  - Completed tasks
-- Add and manage employee details
-- Assign tasks with deadline
-- Task progress tracking using progress bar
-- Notifications for employees
-- Calendar view for tasks
-- Responsive design using glassmorphism UI
-- Logout functionality
+- Dashboard showing total employees, pending & completed tasks
+- Add and manage employees
+- Assign tasks with deadlines
+- Task progress shown via progress bar
+- Notifications for new tasks
+- Calendar view for task scheduling
+- Responsive and modern design with glassmorphism effect
+- Logout with redirect to login page
 
 ---
 
 ## Technologies Used
 
-- *HTML5* – For structuring the pages
-- *CSS3* – For design, layout, and glassmorphism style
-- *JavaScript* – For logic and interaction
-- *LocalStorage* – To store data like employee info, tasks, and status in the browser
+- *HTML5* – For webpage structure
+- *CSS3* – For design and layout (glassmorphism)
+- *JavaScript* – For interactivity and logic
+- *LocalStorage* – For saving data within the browser
 
 ---
 
-## How It Works
+## Limitations
 
-- The *admin panel* is used by the administrator to manage the system.
-- Tasks assigned by the admin are stored in the browser using *LocalStorage*.
-- The *employee panel* can access these tasks from the same browser.
-- Since this system is built using LocalStorage, *both panels must run on the same browser* for full functionality.
+- No backend or database; all data stored in LocalStorage
+- Only works properly when admin and employee panels are opened in the same browser/device
+- Employees cannot yet update task status themselves
+
+---
+
+## Future Enhancements
+
+- Add backend (Node.js + MongoDB or Firebase)
+- Employee login system
+- Employee ability to update task status
+- Email notifications
+- Allow multi-device access with real-time syncing
 
 ---
 
 ## How to Run the Project
 
-1. Clone or download the project:
+1. *Download or Clone* the repository:
    ```bash
    git clone https://github.com/shr-eeya/employee-manage-task.git
-
-1.Open the folder and run the index.html file in your browser
-2. Register  as an admin and start using the dashboard.
-
-
-LIMITATIONS 
-. Currently works only on the same browser (LocalStorage-based)
-. No database or server backened.
-. Employees cannot update task status.
-
-
-FUTURE ENHANCEMENTS 
-. Add backened using node.js and MongoDB or firebase
-. Create separate login for employees
-.Enable employees to update task status
-. Sync data between different devices
-. Send email notifications
-
-
 
  PROJECT BY 
 Shreeya Patel
 B.Tech - Computer Science Engineering  Lakshmi Narain College Of Technology Excellence
 GitHub : shr-eeya
+
