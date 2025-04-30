@@ -77,9 +77,8 @@ The main objective of this project is to create a task management system that al
 
 ## How to Run the Project
 
-1. *Download or Clone* the repository:
-   ```bash
-   https://github.com/shr-eeya/manages-task-of-employee.github.io.git
+1. In chrome paste the below link.
+   https://shr-eeya.github.io/manages-task-of-employee.github.io/
 
 1.Open the folder and launch index.html in your browser
 2. Register  an admin ,login,and begin using the dashboard
